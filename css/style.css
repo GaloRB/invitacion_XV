@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(53, 53, 53, 0.51);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(53, 52, 52, 0.501);
   padding: 30px;
   width: 100%;
   float: left;
@@ -1105,6 +1105,20 @@ form label {
   color: var(--text-color);
   font-size: 30px;
 }
+
+.mother h3{
+  font-family: "Playwrite DK Uloopet", Arial, serif;
+  color: var(--text-color);
+  font-size: 30px;
+}
+
+.mother p{
+  color: #000 !important;
+}
+
+.mama p{
+  color: #828282 !important;
+}
 .couple-half .groom, .couple-half .bride {
   float: left;
   -webkit-border-radius: 50%;
@@ -1208,7 +1222,7 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
