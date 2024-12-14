@@ -194,6 +194,8 @@
 	
 	};
 
+	
+
 
 	// Loading page
 	var loaderPage = function() {
@@ -236,13 +238,14 @@
 
 	/*  */
 
-	/* window.addEventListener('scroll', ()=>{
-		sound.play();
-	}) */
-
 	let play = document.querySelector('#play');
 	let pause = document.querySelector('#pause');
 	let divIcon = document.querySelector('.div-icon');
+
+	window.addEventListener('scroll', ()=>{
+		play.style.display = 'none';
+		pause.style.display = 'block';
+	})
 
 	play.addEventListener('click', ()=>{
 		divIcon.style.padding = '10px';
@@ -271,6 +274,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		//playPause();
 	});
 
 

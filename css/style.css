@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #c337c3;
+  color: #828282;
   background: #fff;
 }
 
@@ -1627,6 +1627,43 @@ form label {
   vertical-align: middle;
 }
 .gototop a:hover, .gototop a:active, .gototop a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.volumen {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.volumen.active {
+  opacity: 1;
+  visibility: visible;
+}
+.volumen a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.volumen a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.volumen a:hover, .volumen a:active, .volumen a:focus {
   text-decoration: none;
   outline: none;
 }
