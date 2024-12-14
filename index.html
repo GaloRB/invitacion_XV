@@ -48,6 +48,13 @@
 	<body>
 		<a id="clic" href="#"></a>
 		<audio id="sound" src="./musica.mp3" autoplay></audio>
+
+		<div class="popup-overlay" id="popup">
+			<div class="popup-content">
+			  <h2>Te invito a mis XV</h2>
+			  <button id="btn-invitacion">Ver invitación</button>
+			</div>
+		  </div>
 		
 	<div class="fh5co-loader"></div>
 	
@@ -399,6 +406,10 @@
 
 	<script>
     //var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+
+	document.getElementById('btn-invitacion').addEventListener('click', function() {
+		document.getElementById('popup').style.display = 'none';
+	});
 
     // default example
     simplyCountdown('.simply-countdown-one', {
