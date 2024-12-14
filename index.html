@@ -434,27 +434,10 @@
 		const name = document.querySelector('#name').value;
 		const lastName = document.querySelector('#lastName').value;
 		const guests = document.querySelector('#guests').value;
-		let   urlWhats = `https://api.whatsapp.com/send?phone=+527298041817&text=Hola%20Chicos%21%20Soy%20${name}%20${lastName}%20y%20claro%20que%20cuentan%20con%20mi%20asistencia%20voy%20con%20${guests}%20personas.`;
-
-		const qrData = `Nombre - ${name}\nApellido - ${lastName}\nAsistentes - ${guests}`;
-
-		// clean QR container
-		const qrContainer = document.getElementById('qrcode');
-        qrContainer.innerHTML = "";
-
-		 // Generate QR code
-		/*  new QRCode(qrContainer, qrData); */
-
-		new QRCode(qrContainer, {
-			text: qrData,
-			colorDark: "#000000", // Color del código
-			colorLight: "#ffffff", // Fondo del código
-		});
-
-		console.log(qrData)
+		let   urlWhats = `https://api.whatsapp.com/send?phone=+527292774865&text=Hola%20Fernanda%21%20Soy%20${name}%20${lastName}%20y%20claro%20que%20cuentas%20con%20mi%20asistencia%20voy%20con%20${guests}%20personas.`;
 
 
-		/* window.open(urlWhats, '_blank') */;
+		window.open(urlWhats, '_blank');
 	})
 
 	
