@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  color: #c337c3;
   background: #fff;
 }
 
@@ -59,6 +59,14 @@ body {
   background-color: #fff;
   color: #000;
   font-size: 20px;
+}
+
+.vest p{
+  color: #000 !important;
+}
+
+.vest h2{
+  color: var(--bg-color) !important;
 }
 
 #page {

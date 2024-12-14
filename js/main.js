@@ -120,7 +120,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 100, 'easeInOutExpo' );
 					});
 					
 				}, 100);
