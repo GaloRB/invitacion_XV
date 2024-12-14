@@ -243,6 +243,7 @@
 	let divIcon = document.querySelector('.div-icon');
 
 	window.addEventListener('scroll', ()=>{
+		sound.play();
 		play.style.display = 'none';
 		pause.style.display = 'block';
 	})
