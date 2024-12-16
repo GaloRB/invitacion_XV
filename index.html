@@ -16,6 +16,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fleur+De+Leah&family=Great+Vibes&family=Imperial+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fleur+De+Leah&family=Great+Vibes&family=Imperial+Script&family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -60,7 +64,7 @@
 	
 	<div id="page">
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/hero6.jpg);">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/hero10.jpeg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -71,10 +75,10 @@
 								<i id="play" class="icon-play"></i>
 								<i id="pause" class="icon-pause"></i>
 							</div>
-							<h1>Fernanda Gabriela</h1>
+							<h1>Mis 15 Años<br>Fernanda Gabriela</h1>
 							<h2>Falta muy poco para mi gran día, ¡celebrémoslo juntos!</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p id="confirmar"><a href="#fh5co-started" smooth class="btn btn-default btn-sm">Confirmar asitencia</a></p>
+							<p id="confirmar"><a href="#fh5co-started" smooth class="btn btn-default btn-sm">Confirmar asistencia</a></p>
 						</div>
 					</div>
 				</div>
@@ -314,44 +318,6 @@
 		</div>
 	</div>
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Acompañame</h2>
-					<p>Por favor dejame tu nombre y apellido además de cunatas personas llevarás para saber que cuento con tu valiosa presencia y te brindare el numero de lugares que he reservado para ti en mi lista de invitados, gracias.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form id="attending" class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Nombre</label>
-								<input type="text" class="form-control" id="name" placeholder="Nombre">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="lastName" class="sr-only">Apellido</label>
-								<input type="text" class="form-control" id="lastName" placeholder="Apellido">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="guests" class="sr-only">Número de personas</label>
-								<input type="number" min="1" class="form-control" id="guests" placeholder="Número de personas">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Confirmar</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -428,13 +394,13 @@
 
     });
 
-	const form = document.querySelector('#attending');
-	form.addEventListener('submit', (e)=>{
+	const form = document.querySelector('#confirmar');
+	form.addEventListener('click', (e)=>{
 		e.preventDefault();
-		const name = document.querySelector('#name').value;
+		/* const name = document.querySelector('#name').value;
 		const lastName = document.querySelector('#lastName').value;
-		const guests = document.querySelector('#guests').value;
-		let   urlWhats = `https://api.whatsapp.com/send?phone=+527292774865&text=Hola%20Fernanda%21%20Soy%20${name}%20${lastName}%20y%20claro%20que%20cuentas%20con%20mi%20asistencia%20voy%20con%20${guests}%20personas.`;
+		const guests = document.querySelector('#guests').value; */
+		let   urlWhats = `https://api.whatsapp.com/send?phone=+527292774865&text=Hola%20Fernanda%20claro%20que%20cuentas%20con%20mi%20asistencia.`;
 
 
 		window.open(urlWhats, '_blank');
